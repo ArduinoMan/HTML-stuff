@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>unLock</title>
+<style>
+#lettersHidden {
+	visibility: hidden;
+}
+#hiddenLink {
+	visibility: hidden;
+	font-family: Futura;
+	color: purple;
+	text-decoration: none;
+}
+code {
+	background-color: #CCCCCC;
+	color: black;
+}
+body {
+	background-color: black;
+}
+h3 {
+	color: white;
+}
+</style>
+<script>
+function plus(char) {
+	document.getElementById('text').innerHTML += char;
+}
+function textVisible() {
+	document.getElementById('lettersHidden').style.visibility='visible';
+}
+function submit() {
+	if(document.getElementById('text').innerHTML == "Passcode: A1B2C3") {				document.getElementById('hiddenLink').style.visibility='visible';
+	} else {
+		alert("terminated");
+		document.getElementById('over').style.display='none';
+	}
+}
+</script>
+<center>
+<div id="over">
+<h3>The Passcode is <code>A1B2C3</code>. Now you just have to find the letters!</h3>
+<textarea readonly id="text">Passcode: </textarea>
+<br>
+<button type="button" onclick="plus('1');">1</button>
+<button type="button" onclick="plus('2');">2</button>
+<button type="button" onclick="plus('3');">3</button>
+<br>
+<button type="button" onclick="plus('4');">4</button>
+<button type="button" onclick="plus('5');">5</button>
+<button type="button" onclick="plus('6');">6</button>
+<br>
+<button type="button" onclick="plus('7');">7</button>
+<button type="button" onclick="plus('8');">8</button>
+<button type="button" onclick="plus('9');">9</button>
+<br>
+<button type="button" onclick="submit();">Submit</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="width: 30px; height: 30px; background-color: #CCCCCC;" onclick="textVisible();"></div>
+<div id="lettersHidden">
+<button type="button" onclick="plus('A');">A</button>
+<button type="button" onclick="plus('B');">B</button>
+<button type="button" onclick="plus('C');">C</button>
+<button type="button" onclick="plus('D');">D</button>
+<button type="button" onclick="plus('E');">E</button>
+<button type="button" onclick="plus('F');">F</button>
+<button type="button" onclick="plus('G');">G</button>
+<button type="button" onclick="plus('H');">H</button>
+<button type="button" onclick="plus('I');">I</button>
+<button type="button" onclick="plus('J');">J</button>
+<button type="button" onclick="plus('K');">K</button>
+<button type="button" onclick="plus('L');">L</button>
+<button type="button" onclick="plus('M');">M</button>
+<button type="button" onclick="plus('N');">N</button>
+<button type="button" onclick="plus('O');">O</button>
+<button type="button" onclick="plus('P');">P</button>
+<button type="button" onclick="plus('Q');">Q</button>
+<button type="button" onclick="plus('R');">R</button>
+<button type="button" onclick="plus('S');">S</button>
+<button type="button" onclick="plus('T');">T</button>
+<button type="button" onclick="plus('U');">U</button>
+<button type="button" onclick="plus('V');">V</button>
+<button type="button" onclick="plus('W');">W</button>
+<button type="button" onclick="plus('X');">X</button>
+<button type="button" onclick="plus('Y');">Y</button>
+<button type="button" onclick="plus('Z');">Z</button>
+</div>
+</div>
+</center>
+<div id="RESTRICTED CONTENT"><a href="main.html" id="hiddenLink" title="C'mon, I know you want to">Hover over this and then click it</a></div>
+</html>
