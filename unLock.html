@@ -30,7 +30,8 @@ function textVisible() {
 	document.getElementById('lettersHidden').style.visibility='visible';
 }
 function submit() {
-	if(document.getElementById('text').innerHTML == "Passcode: A1B2C3") {				document.getElementById('hiddenLink').style.visibility='visible';
+	if(document.getElementById('text').innerHTML == "Passcode: A1B2C3") {				
+		document.getElementById('hiddenLink').style.visibility='visible';
 	} else {
 		alert("terminated");
 		document.getElementById('over').style.display='none';
@@ -95,5 +96,6 @@ function submit() {
 </div>
 </div>
 </center>
-<div id="RESTRICTED CONTENT"><a href="main.html" id="hiddenLink" title="C'mon, I know you want to">Hover over this and then click it</a></div>
+<div id="RESTRICTED CONTENT">
+<a href="main.html" id="hiddenLink" title="C'mon, I know you want to">Link to main page</a></div>
 </html>
